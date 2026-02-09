@@ -1,0 +1,20 @@
+{
+  "name": "festsmeden",
+  "version": "0.1.0",
+  "description": "Party planner application - The Party Smith",
+  "scripts": {
+    "dev": "next dev -p 9558",
+    "build": "next build",
+    "start": "next start -p 9558",
+    "lint": "next lint",
+    "menu": "node scripts/menu.js"
+  },
+  "keywords": [
+    "party",
+    "planner",
+    "events",
+    "voting"
+  ],
+  "author": "Conzeon",
+  "license": "MIT"
+}
