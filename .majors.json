@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "source": "graph TD\n  subgraph UserFlow\n    U[User] --> CREATE[Create Event]\n    CREATE --> INVITE[Invite Guests]\n    INVITE --> VOTE[Vote on Activities]\n    VOTE --> RESULT[See Results]\n  end\n\n  subgraph Features\n    VOTE --> POLL[Activity Polls]\n    VOTE --> DATE[Date Picker]\n    VOTE --> LOC[Location Vote]\n  end\n\n  subgraph Data\n    EVENT[(Event DB)] --> POLL\n    EVENT --> DATE\n    EVENT --> LOC\n    RESULT --> EVENT\n  end\n\n  subgraph Future\n    NOTIF[Notifications]\n    REMIND[Reminders]\n    SHARE[Share Links]\n  end",
+  "nodes": {},
+  "edges": {},
+  "meta": {
+    "title": "Festsmeden - Party Planner",
+    "description": "Event creation, voting, and coordination flows"
+  }
+}
