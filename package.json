@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "description": "Party planner application - The Party Smith",
   "scripts": {
-    "dev": "next dev -p 9558",
-    "build": "next build",
-    "start": "next start -p 9558",
-    "lint": "next lint",
+    "mvp": "cd mvp/extracted/festsmeden && npm install && node server.js",
+    "dev": "npm run mvp",
     "menu": "node scripts/menu.js"
   },
   "keywords": [

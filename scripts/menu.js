@@ -8,11 +8,11 @@ const { execSync, spawn } = require('child_process');
 const readline = require('readline');
 
 const MENU_ITEMS = [
-  { key: '1', label: 'Start Dev Server', command: 'npm run dev' },
-  { key: '2', label: 'Build', command: 'npm run build' },
-  { key: '3', label: 'Lint', command: 'npm run lint' },
-  { key: '4', label: 'Git Status', command: 'git status' },
-  { key: '5', label: 'Git Pull', command: 'git pull' },
+  { key: '1', label: 'Start MVP Server (port 9558)', command: 'cd mvp/extracted/festsmeden && npm install && node server.js' },
+  { key: '2', label: 'Open in Browser', command: 'start http://localhost:9558' },
+  { key: '3', label: 'Git Status', command: 'git status' },
+  { key: '4', label: 'Git Pull', command: 'git pull' },
+  { key: '5', label: 'Git Push', command: 'git push' },
   { key: 'q', label: 'Quit', command: null }
 ];
 
