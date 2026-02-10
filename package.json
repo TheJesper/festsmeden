@@ -1,18 +1,21 @@
 {
   "name": "festsmeden",
-  "version": "0.1.0",
-  "description": "Party planner application - The Party Smith",
+  "version": "1.0.0",
+  "description": "FestSmeden - Party Planner",
   "scripts": {
-    "mvp": "cd mvp/extracted/festsmeden && npm install && node server.js",
-    "dev": "npm run mvp",
+    "dev": "next dev -p 9558",
+    "build": "next build",
+    "start": "next start -p 9558",
     "menu": "node scripts/menu.js"
   },
-  "keywords": [
-    "party",
-    "planner",
-    "events",
-    "voting"
-  ],
-  "author": "Conzeon",
-  "license": "MIT"
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0"
+  }
 }
