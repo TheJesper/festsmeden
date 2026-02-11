@@ -16,7 +16,7 @@ const EASY_PASSWORDS = _P.split(",");
 const _M = "a3d2f8c91b4e7d6a0f5c8b2e1d9a4f7c";
 const _H = (s) => { let h=0; for(let i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h=Math.abs(h).toString(16);h=parseInt(h.slice(-8),16);} return h.toString(16).padStart(8,"0"); };
 const _MH = (pw) => { let h=_M; for(let i=0;i<3;i++){h=_H(pw+h);} return h; };
-const MASTER_HASH = "9ca7f556";
+const MASTER_HASH = "f29ab72e";
 const isMaster = (pw) => _MH(pw) === MASTER_HASH;
 
 const CREW_EMOJIS = [
